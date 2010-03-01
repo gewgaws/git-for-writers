@@ -1,0 +1,47 @@
+/* print.css Print Styles */
+
+/* Base Styles */
+
+/* Bold on headings, b, and strong */
+h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
+/* Italic on i, em, and cite: */
+i,em,cite { font-style: italic; }
+/* Dotted border and help cursor to abbr and acronym: */
+abbr,acronym { border-bottom: 1px dotted; cursor: help; }
+
+/*
+  Print all text color as black.
+*/
+
+* { color: black; }
+
+/*
+  Hide the accessibility navigation, the site navigation,
+  and the validator links, which are unhelpful when a page
+  is printed.
+*/
+
+ul.accessibility,
+ul#navigation,
+ul.validators {
+	display: none;
+}
+
+
+/*
+  Automatically print the URLs from hyperlinks in the
+  content area of a page, and put them in a monospace font,
+  in parentheses. 
+  This may not work on less standards-compliant browsers,
+  which do not support the :after pseudoelement and/or 
+  the content: property.
+  See http://www.alistapart.com/articles/goingtoprint/
+*/
+
+div#content a:link:after,
+div#content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   font-family: "Courier New", Courier, monospace;
+}
+

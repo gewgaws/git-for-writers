@@ -1,0 +1,119 @@
+/* screen.css: Screen Styles */
+
+/* Base Styles */
+
+/* Bold on headings, b, and strong */
+h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
+/* Italic on i, em, and cite: */
+i,em,cite { font-style: italic; }
+/* Dotted border and help cursor to abbr and acronym: */
+abbr,acronym { border-bottom: 1px dotted; cursor: help; }
+
+/* Body */
+
+body {
+}
+
+/* Major Divisions */
+
+/* Container */
+div#container {
+}
+
+/* Header */
+div#header {
+}
+div#header h1 {
+}
+div#header h1 a {
+}
+div#header p.tagline {
+}
+div#header ul.accessibility {
+}
+
+/* Content */
+div#content {
+}
+
+div#main {
+}
+
+div#supporting {
+}
+
+/* Footer */
+div#footer {
+}
+div#footer p.copyright {
+}
+div#footer ul.validators {
+}
+div#footer ul.validators li {
+}
+
+/*Navigation*/
+ul#navigation {
+}
+
+ul#navigation li {
+}
+
+ul#navigation li a {
+}
+
+ul#navigation li a:visited {
+}
+
+ul#navigation li a:hover,
+ul#navigation li a:focus {
+}
+
+
+/*Content Typography: Headings*/
+div#content h2 {
+}
+div#content h3 {
+}
+div#content h4 {
+}
+div#content h5 {
+}
+div#content h6 {
+}
+
+/*Content Typography: Paragraphs*/
+div#content p {
+}
+
+/*Content Typography: Unordered Lists*/
+div#content ul {
+}
+div#content ul li {
+}
+/*Nested*/
+div#content * li ul {
+}
+div#content * li ul li {
+}
+
+/*Content Typography: Ordered Lists*/
+div#content ol {
+}
+div#content ol li {
+}
+/*Nested*/
+div#content * li ol {
+}
+div#content * li ol li {
+}
+
+/*Content Typography: Links*/
+div#content a {
+}
+div#content a:visited {
+}
+div#content a:hover,
+div#content a:focus {
+}
+
