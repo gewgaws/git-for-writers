@@ -117,6 +117,14 @@ ul#navigation li a:hover,
 ul#navigation li a:focus {
 }
 
+/*Content Typography: Shared*/
+div#content p,
+div#content ul,
+div#content ol {
+  font-size: medium;
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
 
 /*Content Typography: Headings*/
 div#content h2 {
@@ -131,6 +139,13 @@ div#content h4 {
 div#content h5 {
 }
 div#content h6 {
+}
+
+/*Shared Typography*/
+div#content p,
+div#content ul,
+div#content ol {
+  font-size: medium;
 }
 
 /*Content Typography: Paragraphs*/
@@ -168,3 +183,23 @@ div#content a:hover,
 div#content a:focus {
 }
 
+/*Git*/
+samp,pre,kbd,code {
+  font-family: Monaco, "Lucida Console", "Courier New", Courier, mono;
+  font-size: 80%;
+  padding: .2em;
+  background-color: black;
+  color: white;
+}
+code {
+  background-color: #EEE;
+  color: black;
+}
+pre {
+  line-height: 1.4;
+  padding: 1em;
+  background-color: black;
+  color: white;
+}
+.warn { color: red; }
+.good { color: green; }
