@@ -130,6 +130,8 @@ div#content ol {
 /*Content Typography: Headings*/
 div#content h2 {
   font-size: 150%;
+  margin-top: 1em; 
+  margin-bottom: .5em;
 }
 div#content h3 {
   font-size: 130%;
