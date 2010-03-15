@@ -126,7 +126,11 @@ div#content ol {
   line-height: 1.5;
   padding-bottom: 1em;
 }
-
+div#content ul li {
+  list-style-type: disc;
+  margin-left: 4ex;
+  margin-top: 1em;
+}
 /*Content Typography: Headings*/
 div#content h2 {
   font-size: 150%;
@@ -187,6 +191,12 @@ div#content a:focus {
 }
 
 /*Home Page*/
+div#content ul#project-overview li {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 0;
+}
+
 li#alone,
 li#wherever,
 li#together { 
@@ -213,6 +223,7 @@ samp,pre,kbd,code {
   background-color: black;
   color: white;
 }
+pre,code { margin: 1em 0em; }
 code {
   background-color: #EEE;
   color: black;
