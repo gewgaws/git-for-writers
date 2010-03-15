@@ -62,6 +62,7 @@ div#supporting {
 
 /* Footer */
 div#footer {
+  clear: both;
   border-top: 1px dotted black;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -182,6 +183,25 @@ div#content a:visited {
 div#content a:hover,
 div#content a:focus {
 }
+
+/*Home Page*/
+li#alone,
+li#wherever,
+li#together { 
+  width: 210px;
+  padding: 5px;
+  float: left;
+  background-color: #CCDDFF;
+}
+li#wherever { background-color: #FFF; }
+li.concepts,
+li.hands-on,
+li.scenarios {
+  min-height: 250px;
+}
+
+
+
 
 /*Git*/
 samp,pre,kbd,code {
