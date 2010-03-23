@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="mysite-com">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Git for Writers: Style Guide</title>
+	
+	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+	<!--[if lte IE 7>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen-ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	
+<!--REMOVE COMMENT TAGS TO USE FACEBOOK SHARE METADATA:-->
+	
+<!--
+	<meta name="title" content="Match this with the content of the title tag above." /> 
+	<meta name="description" content="A short description of this page." />
+	<link rel="image_src" href="http://example.com/media/share/thumbnail.jpg" /> 
+-->
+
+<!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
+
+<!--
+	<link rel="icon" href="" type="image/png" /> 
+	<link rel="shortcut icon" href="" type="image/png" /> 
+-->
+
+	<script type="text/javascript" src="js/mootools/mootools-core.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
+	
+</head>
+
+<body>
+
+<div id="page">
+		
+	<div id="header">
+		
+		<h1><a href="http://gewga.ws/git-for-writers/" rel="home">Git for Writers</a></h1>
+		
+		<p class="tagline">
+			A guide to version tracking, revision, and collaboration for open-source writing.
+		</p>
+		
+		<ul class="accessibility">
+			<li><a href="#navigation">Jump to Navigation</a></li>
+			<li><a href="#content">Jump to Content</a></li>
+		</ul>
+	
+	</div>
+		
+	<div id="content">
+	
+		<div id="main">
+			<h2>Common Commands</h2>
+			<p>
+        Here is a list of common commands that may come in handy for writers
+			</p>
+
+			<h3>Setting up your user name</h3>
+      <p>
+        One of the first things you'll want to do after installing Git is set up your username and email address. 
+        Every time you commit a change, Git will automatically sign your change with your username and email address.
+        So, be sure to use a name and email address that you want others to see when looking at your Git repository. 
+      </p>
+      <pre>$ git config --global user.name "Your name"
+$ git config --global user.email "your_email_address@example.com"
+</pre>
+
+      
+			<ul>
+				<li>
+					<code>kbd</code>: Use the <code>&lt;kbd&gt;</code> element for anything someone
+					would type. For example, <code>&lt;kbd&gt;git status&lt;/kbd&gt;</code> appears 
+					as <kbd>git status</kbd>.
+				</li>
+				<li><code>samp</code>: Use the <code>&lt;samp&gt;</code> element for single-line
+					responses from Git. For example, 
+					<code>&lt;samp&gt;# On branch master&lt;/samp&gt;</code> appears as 
+					<samp># On branch master</samp>.
+				</li>
+				<li><code>pre</code>: Use the <code>&lt;pre&gt;</code> element for multi-line
+					interactions with Git.
+<pre>
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+#
+#	<span class="good">modified:   css/screen.css</span>
+#
+# Changed but not updated:
+#   (use "git add &lt;file&gt;..." to update what will be committed)
+#   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+#
+#	<span class="warn">modified:   style-guide.htm</span>
+#
+</pre>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="supporting">
+		</div>
+	
+	</div>
+		
+	<ul id="navigation">
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="resources.htm">Resources</a></li>
+		<li><a href="about.htm">About</a></li>
+	</ul>
+
+	<div id="footer">
+		<p class="copyright">
+			© 2010 by Gewgaws Lab. Some rights reserved. Content licensed under a 
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+				Creative Commons Attribution-Share Alike 3.0 United States License
+			</a>.
+			<a class="cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+				<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" />
+			</a>
+		</p>
+		<p class="project-information">
+			<a href="http://github.com/gewgaws/git-for-writers">Git for Writers repository</a> 
+			hosted at <a href="http://github.com">GitHub</a>. Learn <a href="participate.htm">how to 
+			contribute</a> to Git for Writers.
+		</p>
+		<ul class="validators">
+			<li><a href="http://validator.w3.org/check?uri=referer" title="Validate this page's XHTML">XHTML</a></li>
+			<li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this page's CSS">CSS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+
+</html>
+
