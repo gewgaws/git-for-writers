@@ -142,6 +142,8 @@ div#content h3 {
   border-bottom: 1px solid #CCC;
 }
 div#content h4 {
+  font-size: 115%;
+  color: #900;
 }
 div#content h5 {
 }
