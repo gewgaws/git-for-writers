@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="mysite-com">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Git for Writers: Tutorial for the writer who utilizes multiple work spaces.</title>
+	
+	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+	<!--[if lte IE 7>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen-ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	
+<!--REMOVE COMMENT TAGS TO USE FACEBOOK SHARE METADATA:-->
+	
+<!--
+	<meta name="title" content="Git for Writers: Tutorial for the writer who utilizes multiple work spaces." /> 
+	<meta name="description" content=Git for Writers: Tutorial for the writer who utilizes multiple work spaces." />
+	<link rel="image_src" href="http://example.com/media/share/thumbnail.jpg" /> 
+-->
+
+<!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
+
+<!--
+	<link rel="icon" href="" type="image/png" /> 
+	<link rel="shortcut icon" href="" type="image/png" /> 
+-->
+
+	<script type="text/javascript" src="js/mootools/mootools-core.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
+	
+</head>
+
+<body>
+
+<div id="page">
+		
+	<div id="header">
+		
+		<h1><a href="http://gewga.ws/git-for-writers/" rel="home">Git for Writers</a></h1>
+		
+		<p class="tagline">
+			A guide to version tracking, revision, and collaboration for open-source writing.
+		</p>
+		
+		<ul class="accessibility">
+			<li><a href="#navigation">Jump to Navigation</a></li>
+			<li><a href="#content">Jump to Content</a></li>
+		</ul>
+	
+	</div>
+		 
+	<div id="content">
+	
+		<div id="main">
+			<h2>A tutorial for the writer who utilizes multiple work spaces.</h2>
+			<p>
+			Working in multiple spaces doesn't have to involve emailing files or jump drives.  Utilizing a Git respository
+			within github enables any machine with internet access to become a native work environment.  This tutorial assumes that you 
+			have already learned how to set up an initial git respository.
+			</p>
+	</div>		
+		<div id="supporting">
+			<h3>Step 1: Set up a github account</h3>
+				<p>Once you have your Git respository set up on one machine, it is very easy to utilize github as a remote respository.  By submitting your 
+				project to the remote github respository, you can then access and edit your project from any machine with internet access.  Setting up a github repository 
+				is both simple and free.</p>
+				<p>To set up your account go to <a href="http://github.com/">github </a> and select 'sign up now'. This directs you to a page that allows you to select the desired package.  You will then be prompted to enter your personal information.  There is also a field 
+				for SSH keys, but that can be left blank for now.  After you select 'create your account', you will be taken to your account dashboard.</p>
+				
+				<p>Select 'Account Settings' from the top navigation bar.  On the Account Settings page you can then enter your SSH keys.  There is a very helpful tutorial
+				for this step if you select 'Need help with public keys?' from above the SSH text fields.  After you add your SSH key you are then ready to create your first 
+				github repository.</p>
+				<img alt="screenshot" src="media/img/Tutorial-Everywhere-Shot1.jpg"/>
+			<h3>Step 2: Create your github repository</h3>
+				<p>Go to your github account dashboard and select 'Create a Repository'.  Enter your project name and description in the 
+				designated fields and select 'Create Repository'.</p>
+				<img alt="Creating a Repository" src="media/img/Tutorial-Everywhere-Shot2.jpg"/>
+				<p>You will then see a page of instructions.  
+				Since this tutorial assumes that you already have an existing repository on your local machine, 
+				you will be using the git commands under 'Existing Git Repo?' which are also displayed below.</p>
+					<ul>
+						<li>
+							<code>Enter this line into your git command terminal:</code><kbd>cd existing_git_repo</kbd>
+						</li>
+					</ul>
+				<p>The line above is going to direct git to your existing repository on your local machine.  You will then need to direct this 
+				repository to your remote github account and enter it as the new repository you just created by entering the following two separate commands;</p>
+					<ul>
+						<li>
+							<code>$</code><kbd> git remote add origin git@github.com:UserName/test-project.git</kbd>
+						</li>
+						<li>
+							<code>$</code><kbd> git push origin master</kbd>
+						</li>
+					</ul>
+				<p>Your project folders and files that you had on your local machine's repository will now be duplicated under the remote repository you 
+				have just created on github.  You can always access your github repositories from your dashboard view.</p>
+			<h3>Step 3: Make and Save Changes from Another Machine</h3>
+			    <p>You now have your project set up on a remote repository in github.  The rest of the tutorial assumes that you are logged
+				out of github and that you have moved to a different computer that has Git already installed.</p> 
+				<p>Using any other computer with git installed, go to github and log in to your account.  Once you are logged in, you
+				should be on the dashboard of your account. You can then view your repositories and select the one you wish to work on.</p>
+				<img alt="screenshot" src="media/img/Tutorial-Everywhere-Shot3.jpg"/>
+				<p>After selecting your repository, you will be taken to the repository's main branch.  Here you can see the url of the project which
+				you will need shortly.  You will need to open the Git command terminal on your computer and enter the commands below in order to clone
+				this remote repository so you can make changes to your project.  The first command will tell Git where to put the clone assuming you want the 
+				project to be cloned in a folder named 'projects'.</p>
+				<ul>
+						<li>
+							<code>$</code><kbd>cd projects</kbd>
+						</li>
+				</ul>
+				<p>You will then need to create the clone of the remote repository with the line below.  The second half of the line can be located in 
+				github after the HTTP READ-ONLY text.
+				</p>
+				<img alt="screenshot" width="650px" src="media/img/Tutorial-Everywhere-Shot4.jpg"/>
+				<ul>
+						<li>
+							<code>$</code><kbd> git clone git@github.com:testUser/git-for-writers.git</kbd>
+						</li>
+					</ul>
+				<p>After running the last line, the newly cloned project should appear in your local projects folder.  To check this,
+				 run the line <kbd>git status</kbd> which will return your current location.  From this point you can go ahead and edit your 
+				 project files in this local copy of the project.  When you are ready to save these changes, insert the lines below:</p>
+				<ul>
+						<li>
+							<code>This line adds your changes to a queue.</code><kbd> git add . </kbd>
+						</li>
+						<li>
+							<code>This line inserts a memo and clarifies that these changed files need to be commited to the local
+							repository and updated in the remote repository.            
+							</code><kbd> git commit -m "Insert a memo here to describe changes made"</kbd>
+						</li>
+						<li>
+							<code>This command will return your location</code><kbd>pwd</kbd>
+						</li>
+						<li>
+							<code>$</code><kbd> git push origin master</kbd>
+						</li>
+					</ul>
+				<p>This last line commits the changes to the remote repository.  You can now see that changes have been made on the github
+				repository detail page.</p>
+	</div>
+		
+	
+	</div>
+		
+	<ul id="navigation">
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="resources.htm">Resources</a></li>
+		<li><a href="about.htm">About</a></li>
+	</ul>
+
+	<div id="footer">
+		<p class="copyright">
+			© 2010 by Gewgaws Lab. Some rights reserved. Content licensed under a 
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+				Creative Commons Attribution-Share Alike 3.0 United States License
+			</a>.
+			<a class="cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+				<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" />
+			</a>
+		</p>
+		<p class="project-information">
+			<a href="http://github.com/gewgaws/git-for-writers">Git for Writers repository</a> 
+			hosted at <a href="http://github.com">GitHub</a>. Learn <a href="participate.htm">how to 
+			contribute</a> to Git for Writers.
+		</p>
+		<ul class="validators">
+			<li><a href="http://validator.w3.org/check?uri=referer" title="Validate this page's XHTML">XHTML</a></li>
+			<li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this page's CSS">CSS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+
+</html>
+
