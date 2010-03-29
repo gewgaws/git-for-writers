@@ -126,22 +126,43 @@ div#content ol {
   line-height: 1.5;
   padding-bottom: 1em;
 }
+div#content ul li,
+div#content ol li {
+  margin-bottom: .5em;
+}
 div#content ul li {
   list-style-type: disc;
   margin-left: 4ex;
-  margin-top: 1em;
+}
+div#content ol li {
+  list-style-type: decimal;
+  margin-left: 4ex;
+}
+div#content blockquote {
+  font-style: italic;
+}
+div#content blockquote > * {
+  margin-left: 2ex;
 }
 /*Content Typography: Headings*/
 div#content h2 {
-  font-size: 150%;
+  font-size: 180%;
   margin-top: 1em; 
   margin-bottom: .5em;
 }
 div#content h3 {
-  font-size: 130%;
-  border-bottom: 1px solid #CCC;
+  font-size: 160%;
+  border-top: 5px solid #666;
+  border-bottom: 1px solid #666;
+  padding-top: .2em;
+  padding-bottom: .3em;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
 div#content h4 {
+  font-size: 160%;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
 div#content h5 {
 }
@@ -151,7 +172,8 @@ div#content h6 {
 /*Shared Typography*/
 div#content p,
 div#content ul,
-div#content ol {
+div#content ol,
+div#content pre {
   font-size: medium;
 }
 
@@ -212,8 +234,12 @@ li.scenarios {
   min-height: 250px;
 }
 
-
-
+/*Style Guide*/
+.example-rendering {
+  padding: .5em;
+  border: 1px solid #666;
+  margin-bottom: 1em;
+}
 
 /*Git*/
 samp,pre,kbd,code {
@@ -223,7 +249,11 @@ samp,pre,kbd,code {
   background-color: black;
   color: white;
 }
-pre,code { margin: 1em 0em; }
+pre {
+  margin: 0em 0em 1.5em 0em;
+  overflow: auto;
+}
+li pre { margin-top: .5em; }
 code {
   background-color: #EEE;
   color: black;
