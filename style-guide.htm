@@ -61,6 +61,10 @@
 				to follow for contributing to Git for Writers.
 			</p>
 			<h3>Basic Markup</h3>
+			<p>
+				Like any good XHTML page, most of the markup for <cite>Git for 
+				Writers</cite> consists of headings, paragraphs, and lists.
+			</p>
 			<h4>Headings</h4>
 			<p>
 				The <strong>names of pages</strong> are placed in 
@@ -156,20 +160,58 @@
 					<li>We love Git, how about you?</li>
 				</ul>
 			</div>
+			<h3>Basic Phrase Markup</h3>
+			<p>
+				You can <strong>make short bits of text bold</strong> 
+				(<code>&lt;strong&gt;</code>), add <em>a little emphasis</em> 
+				(<code>&lt;em&gt;</code>), or refer to the title of a work,
+				<cite>Git for Writers</cite> (<code>&lt;cite&gt;</code>).
+			</p>
 			<h3>Git-related Markup</h3>
-			<ul>
+			<p>
+				Because Git is a command-line tool, most interaction with it 
+				occurs through text, in a terminal. There are three different 
+				tags to use for marking up Git input, output, and interactions:
+			</p>
+			<ol>
 				<li>
 					<code>kbd</code>: Use the <code>&lt;kbd&gt;</code> element for anything someone
 					would type. For example, <code>&lt;kbd&gt;git status&lt;/kbd&gt;</code> appears 
 					as <kbd>git status</kbd>.
 				</li>
-				<li><code>samp</code>: Use the <code>&lt;samp&gt;</code> element for single-line
-					responses from Git. For example, 
-					<code>&lt;samp&gt;# On branch master&lt;/samp&gt;</code> appears as 
+				<li>
+					<code>samp</code>: Use the <code>&lt;samp&gt;</code> 
+					element for single-line responses from Git. For example, 
+					<code>&lt;samp&gt;# On branch master&lt;/samp&gt;</code> 
+					appears as
 					<samp># On branch master</samp>.
 				</li>
-				<li><code>pre</code>: Use the <code>&lt;pre&gt;</code> element for multi-line
-					interactions with Git.
+				<li>
+					<code>pre</code>: Use the <code>&lt;pre&gt;</code> element 
+					for multi-line interactions with Git. Output that appears 
+					in red (in many environments) can be marked using 
+					<code>&lt;span class="warn"&gt;</code>, and output that 
+					appears in green can be marked as <code>&lt;span class="good"&gt;</code>. Git sometimes outputs angle 
+					brackets, so be sure to escape those (<code>&amp;lt;</code> for <code>&lt;</code>, <code>&amp;gt;</code> for <code>&gt;</code>):
+				</li>
+			</ol>
+<pre>
+&lt;pre&gt;
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD &amp;lt;file&amp;gt;..." to unstage)
+#
+#	&lt;span class="good"&gt;modified:   css/screen.css&lt;/span&gt;
+#
+# Changed but not updated:
+#   (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+#   (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+#
+#	&lt;span class="warn"&gt;modified:   style-guide.htm&lt;/span&gt;
+#
+&lt;/pre&gt;
+</pre>
 <pre>
 $ git status
 # On branch master
@@ -185,8 +227,6 @@ $ git status
 #	<span class="warn">modified:   style-guide.htm</span>
 #
 </pre>
-				</li>
-			</ul>
 		</div>
 		
 		<div id="supporting">
