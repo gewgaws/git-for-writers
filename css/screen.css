@@ -140,8 +140,11 @@ div#content h2 {
 div#content h3 {
   font-size: 130%;
   border-bottom: 1px solid #CCC;
+  margin-bottom: .5em;
 }
 div#content h4 {
+  font-size: 125%;
+  margin-bottom: .5em;
 }
 div#content h5 {
 }
@@ -151,7 +154,8 @@ div#content h6 {
 /*Shared Typography*/
 div#content p,
 div#content ul,
-div#content ol {
+div#content ol,
+div#content pre {
   font-size: medium;
 }
 
