@@ -131,6 +131,12 @@ div#content ul li {
   margin-left: 4ex;
   margin-top: 1em;
 }
+div#content blockquote {
+  font-style: italic;
+}
+div#content blockquote > * {
+  margin-left: 2ex;
+}
 /*Content Typography: Headings*/
 div#content h2 {
   font-size: 150%;
@@ -216,8 +222,12 @@ li.scenarios {
   min-height: 250px;
 }
 
-
-
+/*Style Guide*/
+.example-rendering {
+  margin: 1em;
+  padding: .5em;
+  border: 1px solid #666;
+}
 
 /*Git*/
 samp,pre,kbd,code {
