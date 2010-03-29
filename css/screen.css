@@ -150,6 +150,7 @@ div#content h2 {
   margin-top: 1em; 
   margin-bottom: .5em;
 }
+
 div#content h3 {
   font-size: 160%;
   border-top: 5px solid #666;
@@ -213,6 +214,18 @@ div#content a:focus {
 }
 
 /*Home Page*/
+.home div#content h3 { 
+  font-size: 130%;
+  border-top: 0px;
+  border-bottom: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+}
+.home div#content h4 {
+  font-size: 100%;
+  margin: 0px;
+  padding: .5em 0 .5em 0em;
+}
 div#content ul#project-overview li {
   list-style-type: none;
   margin-left: 0;
@@ -231,7 +244,7 @@ li#wherever { background-color: #FFF; }
 li.concepts,
 li.hands-on,
 li.scenarios {
-  min-height: 250px;
+  min-height: 300px;
 }
 
 /*Style Guide*/
