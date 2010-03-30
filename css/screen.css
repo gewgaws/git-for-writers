@@ -8,32 +8,50 @@ h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
 i,em,cite { font-style: italic; }
 /* Dotted border and help cursor to abbr and acronym: */
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
+/* Bold on headings, b, and strong */
 
 /* Body */
-
+body,html { background-color: #EEE; }
 body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: small;
 }
+h1,h2,h3,h4,h5,h6 { font-family: "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 /* Major Divisions */
 
-/* Container */
-div#container {
+/* Whole Page */
+div#page {
+  background-color: #FFF;
+  width: 660px;
+  padding: 20px;
+  margin: 20px;
 }
 
 /* Header */
 div#header {
+  border-bottom: 1px dotted black;
+  padding-bottom: 1em;
 }
 div#header h1 {
+  font-size: 200%;
 }
 div#header h1 a {
+  color: black;
+  text-decoration: none;
 }
 div#header p.tagline {
+  color: #900;
 }
 div#header ul.accessibility {
+  position: absolute;
+  left: -10000px;
 }
 
 /* Content */
 div#content {
+  padding: 1em 0em 2em 0em;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 div#main {
@@ -44,22 +62,53 @@ div#supporting {
 
 /* Footer */
 div#footer {
+  clear: both;
+  border-top: 1px dotted black;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+div#footer * { font-size: x-small; }
 div#footer p.copyright {
+  position: relative;
+  width: 500px;
+  padding-right: 160px;
+  padding-bottom: 2em;
 }
+div#footer a.cc-badge { 
+display: block; 
+position: absolute;
+top: 0px;
+right: 0px;
+}
+div#footer p.project-information { position: absolute; }
 div#footer ul.validators {
 }
 div#footer ul.validators li {
+  float: right;
+  margin-left: 1ex;
 }
 
 /*Navigation*/
 ul#navigation {
+  position: absolute;
+  top: 10px;
+  left: 465px
 }
 
 ul#navigation li {
+  width: 75px;
+  margin-right: 5px;
+  line-height: 1;
+  float: left;
 }
 
 ul#navigation li a {
+  background-color: #CCC;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .5em;
 }
 
 ul#navigation li a:visited {
@@ -69,17 +118,64 @@ ul#navigation li a:hover,
 ul#navigation li a:focus {
 }
 
-
+/*Content Typography: Shared*/
+div#content p,
+div#content ul,
+div#content ol {
+  font-size: medium;
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
+div#content ul li,
+div#content ol li {
+  margin-bottom: .5em;
+}
+div#content ul li {
+  list-style-type: disc;
+  margin-left: 4ex;
+}
+div#content ol li {
+  list-style-type: decimal;
+  margin-left: 4ex;
+}
+div#content blockquote {
+  font-style: italic;
+}
+div#content blockquote > * {
+  margin-left: 2ex;
+}
 /*Content Typography: Headings*/
 div#content h2 {
+  font-size: 180%;
+  margin-top: 1em; 
+  margin-bottom: .5em;
 }
+
 div#content h3 {
+  font-size: 160%;
+  border-top: 5px solid #666;
+  border-bottom: 1px solid #666;
+  padding-top: .2em;
+  padding-bottom: .3em;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
 div#content h4 {
+  font-size: 160%;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
 div#content h5 {
 }
 div#content h6 {
+}
+
+/*Shared Typography*/
+div#content p,
+div#content ul,
+div#content ol,
+div#content pre {
+  font-size: medium;
 }
 
 /*Content Typography: Paragraphs*/
@@ -117,3 +213,69 @@ div#content a:hover,
 div#content a:focus {
 }
 
+/*Home Page*/
+.home div#content h3 { 
+  font-size: 130%;
+  border-top: 0px;
+  border-bottom: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+}
+.home div#content h4 {
+  font-size: 100%;
+  margin: 0px;
+  padding: .5em 0 .5em 0em;
+}
+div#content ul#project-overview li {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+li#alone,
+li#wherever,
+li#together { 
+  width: 210px;
+  padding: 5px;
+  float: left;
+  background-color: #CCDDFF;
+}
+li#wherever { background-color: #FFF; }
+li.concepts,
+li.hands-on,
+li.scenarios {
+  min-height: 300px;
+}
+
+/*Style Guide*/
+.example-rendering {
+  padding: .5em;
+  border: 1px solid #666;
+  margin-bottom: 1em;
+}
+
+/*Git*/
+samp,pre,kbd,code {
+  font-family: Monaco, "Lucida Console", "Courier New", Courier, mono;
+  font-size: 80%;
+  padding: .2em;
+  background-color: black;
+  color: white;
+}
+pre {
+  margin: 0em 0em 1.5em 0em;
+  overflow: auto;
+}
+li pre { margin-top: .5em; }
+code {
+  background-color: #EEE;
+  color: black;
+}
+pre {
+  line-height: 1.4;
+  padding: 1em;
+  background-color: black;
+  color: white;
+}
+.warn { color: red; }
+.good { color: green; }

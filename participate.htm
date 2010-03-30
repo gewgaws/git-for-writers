@@ -4,7 +4,7 @@
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Page Title: Site Name</title>
+	<title>Git for Writers: Participate</title>
 	
 	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
@@ -68,12 +68,69 @@
 			<ol>
 				<li>
 					An installation of Git on your computer, configured with your name and email
-					address
+					address (free)
 				</li>
-				<li>A GitHub account</li>
-				<li>A private/public keypair for accessing your GitHub account</li>
+				<li>A GitHub account (free)</li>
+				<li>
+					A private/public keypair for accessing your GitHub account; this may also mean
+					installing OpenSSH on your computer if you are a Windows user.
+				</li>
 			</ol>
-		</div>
+			<h3>What You'll Do to Get a Copy to Edit</h3>
+			<p>
+				Once you have Git, your GitHub account, and your keys and OpenSSH active, 
+				participating in the project is pretty simple:
+			</p>
+			<ol>
+				<li>
+					After logging into your GitHub account, go to 
+					<a href="http://github.com/gewgaws/git-for-writers">the Git for Writers 
+					repository</a> (repo) and fork a copy to your GitHub account by clicking
+					on the Fork button.
+				</li>
+				<li>
+					Once you have forked <cite>Git for Writers</cite>, you should do an initial 
+					pull from your copy of the repo by running <br />
+					<kbd>git pull git@github.com:<strong>youraccount</strong>/git-for-writers.git</kbd>, 
+					replacing <kbd><strong>youraccount</strong></kbd> with the name of your GitHub 
+					account.
+				</li>
+			</ol>
+			<h3>How to Edit Your Copy</h3>
+			<p>
+				The only thing you need to edit is a plain text editor; TextWrangler is a good 
+				option for Mac users; Windows users might want to check out Notepad++ (which is 
+				different from the Notepad that's included with windows.
+			</p>
+			<p>
+				Git for Writers has <a href="style-guide.htm">its own style guide</a>, which you 
+				should follow. Check out some of our existing pages (such as this one, 
+				which is <code>participate.htm</code> in the repo) to see how we indent HTML 
+				and CSS to keep it maximally readable. (You can also choose View > Source in your 
+				Web browser.
+			</p>
+			<h3>How to Keep Your Copy Current</h3>
+			<p>
+				To make sure you have the latest changes to the project, you'll want to set up a
+				tracking branch 
+				(<a href="http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo">read
+				these GitHub instructions</a>) and pull from and merge that branch regularly. In Git, you can just run 
+				<kbd>git remote add gewgaws git://github.com/gewgaws/git-for-writers.git</kbd>; to 
+				pull from that, run <kbd>git pull gewgaws master</kbd> into your tracking branch.
+			</p>
+			<h3>What You'll Do to Submit Your Work</h3>
+			<p>
+				When you are ready to submit your work, be sure you have pushed to your copy of the 
+				Git for Writers repo on your GitHub account. Make sure you're logged into GitHub 
+				and navigate to the
+				<a href="http://github.com/gewgaws/git-for-writers">the Git for Writers 
+				repository</a>. Click the Pull Request button, and select <strong>gewgaws</strong> 
+				as the recepient. Explain clearly in your message what your contribution to Git for 
+				Writers includes.
+				<li></li>
+			</ol>
+			
+		</div> 
 		
 		<div id="supporting">
 		</div>

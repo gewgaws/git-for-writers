@@ -4,7 +4,7 @@
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Page Title: Site Name</title>
+	<title>Git for Writers: Style Guide</title>
 	
 	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
@@ -57,24 +57,176 @@
 		<div id="main">
 			<h2>Style Guide</h2>
 			<p>
-				There are certain written, structural (XHTML), and design styles to follow for
-				contributing to Git for Writers.
+				There are certain written, structural (XHTML), and design styles 
+				to follow for contributing to Git for Writers.
+			</p>
+			<h3>Basic Markup</h3>
+			<p>
+				Like any good XHTML page, most of the markup for <cite>Git for 
+				Writers</cite> consists of headings, paragraphs, and lists.
+			</p>
+			<h4>Headings</h4>
+			<p>
+				The <strong>names of pages</strong> are placed in 
+				<code>&lt;h2&gt;</code> tags; there should only be one 
+				<code>&lt;h2&gt;</code> heading per page.
+			</p>
+			<p>
+				The <strong>major divisions</strong> of a page should be 
+				written in <code>&lt;h3&gt;</code> tags. There can be multiple 
+				<code>&lt;h3&gt;</code> tags per page.
+			</p>
+			<p>
+				The major divisions of a page can be broken into smaller  
+				<strong>sub-divisions</strong>, marked using 
+				<code>&lt;h4&gt;</code> tags. There can be multiple 
+				<code>&lt;h4&gt;</code> subdivisions within a major division.
+			</p>
+			<h4>Paragraphs</h4>
+			<p>
+				Most running paragraph text appears in the basic 
+				<code>&lt;p&gt;</code> tag.
+			</p>
+			<p>
+				Quotations of long stretches of text can appear in the 
+				<code>&lt;blockquote&gt;</code> tag, but the quoted material 
+				must also be marked by either paragraph tags or, in the case 
+				of a quotation of a list, using the list tags (see the Lists 
+				section of this document):
+			</p>
+<pre>
+&lt;p&gt;
+  According to the 
+  &lt;a href="http://git-scm.com"&gt;Git homepage&lt;/a&gt;,
+&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;
+    Git is a free & open source, distributed version 
+    control system designed to handle everything from 
+    small to very large projects with speed and 
+    efficiency.
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+</pre>
+			<p>That will render something like this:</p>
+			<div class="example-rendering">
+				<p>
+					According to the <a href="http://git-scm.com">Git 
+					homepage</a>,
+				</p>
+				<blockquote>
+					<p>
+						Git is a free & open source, distributed version 
+						control system designed to handle everything from 
+						small to very large projects with speed and 
+						efficiency.
+					</p>
+				</blockquote>
+			</div>
+			<h4>Lists</h4>
+			<p>
+				For steps in a process or anything where order matters, use the ordered list, <code>&lt;ol&gt;</code>:
+			</p>
+<pre>
+&lt;ol&gt;
+  &lt;li&gt;Download Git&lt;/li&gt;
+  &lt;li&gt;Install Git&lt;/li&gt;
+  &lt;li&gt;Love Git&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+			<div class="example-rendering">
+				<ol>
+					<li>Download Git</li>
+					<li>Install Git</li>
+					<li>Love Git</li>
+				</ol>
+			</div>
+			<p>
+				For lists of things whose order does not matter, use the 
+				unordered list, 
+				<code>&lt;ul&gt;</code>:
+			</p>
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;We love Git&lt;/li&gt;
+  &lt;li&gt;Yes we do&lt;/li&gt;
+  &lt;li&gt;We love Git, how about you?&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+			<div class="example-rendering">
+				<ul>
+					<li>We love Git</li>
+					<li>Yes we do</li>
+					<li>We love Git, how about you?</li>
+				</ul>
+			</div>
+			<h3>Basic Phrase Markup</h3>
+			<p>
+				You can <strong>make short bits of text bold</strong> 
+				(<code>&lt;strong&gt;</code>), add <em>a little emphasis</em> 
+				(<code>&lt;em&gt;</code>), or refer to the title of a work,
+				<cite>Git for Writers</cite> (<code>&lt;cite&gt;</code>).
 			</p>
 			<h3>Git-related Markup</h3>
-			<ul>
+			<p>
+				Because Git is a command-line tool, most interaction with it 
+				occurs through text, in a terminal. There are three different 
+				tags to use for marking up Git input, output, and interactions:
+			</p>
+			<ol>
 				<li>
 					<code>kbd</code>: Use the <code>&lt;kbd&gt;</code> element for anything someone
 					would type. For example, <code>&lt;kbd&gt;git status&lt;/kbd&gt;</code> appears 
 					as <kbd>git status</kbd>.
 				</li>
-				<li><code>samp</code>: Use the <code>&lt;samp&gt;</code> element for single-line
-					responses from Git. For example, 
-					<code>&lt;samp&gt;# On branch master&lt;/samp&gt;</code> appears as 
+				<li>
+					<code>samp</code>: Use the <code>&lt;samp&gt;</code> 
+					element for single-line responses from Git. For example, 
+					<code>&lt;samp&gt;# On branch master&lt;/samp&gt;</code> 
+					appears as
 					<samp># On branch master</samp>.
 				</li>
-				<li><code>pre</li>: Use the <code>&lt;pre&gt;</code> element for multi-line
-					interactions with Git.</li>
-			</ul>
+				<li>
+					<code>pre</code>: Use the <code>&lt;pre&gt;</code> element 
+					for multi-line interactions with Git. Output that appears 
+					in red (in many environments) can be marked using 
+					<code>&lt;span class="warn"&gt;</code>, and output that 
+					appears in green can be marked as <code>&lt;span class="good"&gt;</code>. Git sometimes outputs angle 
+					brackets, so be sure to escape those (<code>&amp;lt;</code> for <code>&lt;</code>, <code>&amp;gt;</code> for <code>&gt;</code>):
+				</li>
+			</ol>
+<pre>
+&lt;pre&gt;
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD &amp;lt;file&amp;gt;..." to unstage)
+#
+#	&lt;span class="good"&gt;modified:   css/screen.css&lt;/span&gt;
+#
+# Changed but not updated:
+#   (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+#   (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+#
+#	&lt;span class="warn"&gt;modified:   style-guide.htm&lt;/span&gt;
+#
+&lt;/pre&gt;
+</pre>
+<pre>
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+#
+#	<span class="good">modified:   css/screen.css</span>
+#
+# Changed but not updated:
+#   (use "git add &lt;file&gt;..." to update what will be committed)
+#   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+#
+#	<span class="warn">modified:   style-guide.htm</span>
+#
+</pre>
 		</div>
 		
 		<div id="supporting">
