@@ -182,7 +182,20 @@ div#content * li ol {
 }
 div#content * li ol li {
 }
-
+/* Typography: Ordered Lists */
+ol {
+  padding-left: 40px;
+}
+ol li {
+  list-style-type: decimal;
+}
+/*Nested*/
+ol li ol {
+  padding-left: 20px;
+}
+ol li ol li {
+  list-style-type: lower-alpha;
+}
 /*Content Typography: Links*/
 div#content a {
 }
@@ -214,8 +227,19 @@ li.scenarios {
   min-height: 250px;
 }
 
-
-
+/* Images */
+div.image { background-color: #282828;
+height:auto; 
+width:auto;  
+padding: 10px;}
+div.image img { display: block; margin: 0; padding: 0;}
+div.image p { 
+  color: white;
+  text-align: right;
+  font-size: 90%; 
+  padding: 10px 10px 0px 10px;
+  line-height: 1;
+}
 
 /*Git*/
 samp,pre,kbd,code {
