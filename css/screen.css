@@ -312,3 +312,11 @@ pre {
 }
 .warn { color: red; }
 .good { color: green; }
+
+/* Editor stuff */
+.note-error { 
+	padding: 5px;
+	color: white;	
+	background: #F11818;
+	border-radius: 5px;
+}
