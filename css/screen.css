@@ -320,3 +320,8 @@ pre {
 	background: #F11818;
 	border-radius: 5px;
 }
+
+.note-error:before { 
+	margin: 5px;
+	content: "✎";
+}
