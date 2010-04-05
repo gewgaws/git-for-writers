@@ -314,14 +314,21 @@ pre {
 .good { color: green; }
 
 /* Editor stuff */
-.note-error { 
+.note, .note-error {
+	border-radius: 5px;
 	padding: 5px;
 	color: white;	
-	background: #F11818;
-	border-radius: 5px;
 }
-
-.note-error:before { 
+.note:before, .note-error:before {
 	margin: 5px;
 	content: "✎";
 }
+
+.note {
+	background: #65B32A;
+}
+
+.note-error { 
+	background: #F11818;
+}
+
