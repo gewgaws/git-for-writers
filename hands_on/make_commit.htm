@@ -4,7 +4,7 @@
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Git for Writers: Creating a New Project</title>
+	<title>Git for Writers: Making a Commit</title>
 	
 	<link rel="stylesheet" type="text/css" media="screen, print" href="../css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css" />
@@ -55,16 +55,44 @@
 	<div id="content">
 	
 		<div id="main">
-			<h2>Creating a New Project</h2>
-			<h3>Initialize the Project</h3>
+			<h2>Making a Commit</h2>
 			<p>
-				<span class="note">Explain what creating a new project does.</span>
-				<pre>git init</pre>
+				<span class="note">Explain what making a commit does.</span>
+			</p>
+			<h3>Check Status</h3>
+			<p>
+				<span class="note">Explain how to check status (to see which files are staged).</span>
+			<pre>git status</pre>		
 			</p>
 			<p>
-				<span class="note">Explain response from git.</span>
-				<pre>Initialized empty Git repository in /my_project/.git/</pre>		
+				<span class="note">Explain response from Git.</span>
+<pre># On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached &lt;file&gt;..." to unstage)
+#
+#	<span class="good">new file:   filename.html</span>
+#	<span class="good">new file:   filename2.html</span></pre>
 			</p>
+
+			<h3>Commit Staged Files</h3>
+			<p>
+				<span class="note">Explain how to commit all staged files.</span>
+				<span class="note">Explain what the -m flag means.</span>
+				<pre>git commit -m"I added a new paragraph"</pre>		
+			</p>
+			
+			<p>
+				<span class="note">Explain response from Git.</span>
+				<pre>2 files changed, 0 insertions(+), 0 deletions(-)</pre>
+			</p>
+			<h3>Stage and Commit in One Step</h3>
+			<p>
+				<span class="note">Explain how to stage and commit all changed file at once.</span>
+			</p>
+			<pre>git commit -am"I made a lot of changes"</pre>		
 		</div>
 		
 		<div id="supporting">

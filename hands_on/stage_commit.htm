@@ -55,15 +55,58 @@
 	<div id="content">
 	
 		<div id="main">
-			<h2>Creating a New Project</h2>
-			<h3>Initialize the Project</h3>
+			<h2>Staging a Commit</h2>
 			<p>
-				<span class="note">Explain what creating a new project does.</span>
-				<pre>git init</pre>
+				<span class="note">Explain what staging a commit does.</span>
+			</p>
+
+			<h3>Check Status</h3>
+			<p>
+				<span class="note">Instruct user to change some files.</span><br />
+				<span class="note">Explain how to check status (to see what files have changed).</span>
+				<pre>git status</pre>		
 			</p>
 			<p>
-				<span class="note">Explain response from git.</span>
-				<pre>Initialized empty Git repository in /my_project/.git/</pre>		
+				<span class="note">Explain response from Git.</span>
+<pre># On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#	<span class="warn">filename.html</span></pre>
+			</p>
+
+			<h3>Stage Files</h3>
+			<p>
+				<span class="note">Explain how to add single file.</span>
+				<pre>git add filename.html</pre>		
+			</p>
+
+			<p>
+				<span class="note">Explain how to add multiple files.</span>
+				<pre>git add filename.html filename2.html</pre>		
+			</p>
+
+			<p>
+				<span class="note">Explain how to add all files.</span>
+				<pre>git add .</pre>		
+			</p>
+
+			<h3>Check Status Again</h3>
+			<p>
+				<pre>git status</pre>
+<pre># On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached &lt;file&gt;..." to unstage)
+#
+#	<span class="good">new file:   filename.html</span>
+#	<span class="good">new file:   filename2.html</span></pre>
+				<span class="note">Explain response from Git.</span>
 			</p>
 		</div>
 		
@@ -104,4 +147,5 @@
 </body>
 
 </html>
+
 
